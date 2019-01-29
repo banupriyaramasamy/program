@@ -1,10 +1,12 @@
 #include<stdio.h>
-#include<mat.h>
+#include<math.h>
 void main()
 {
- int n,count=0,r,sum=0,n3,n2;
- scanf("%d",&n);
- n2=n3=n;
+ int n,count=0,r,sum=0,n3,n2,g,i;
+ scanf("%d%d",&n,&g);
+ for(i=n;i<g;i++)
+ {
+     n2=n3=i;
  while(n2>0)
  {
    
@@ -17,13 +19,15 @@ void main()
      sum=sum+pow(r,count);
      n3/=10;
  }
- if(sum==n)
+ 
+ if(sum==i)
  {
-     printf("Yes");
- }
- else
- {
-     printf("No");
- }
- return 0;
+     printf("%d\t",sum);
 }
+
+sum=0;
+count=0;
+}
+return 0;
+}
+     
