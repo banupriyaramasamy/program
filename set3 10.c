@@ -2,22 +2,23 @@
 
 int main()
 {
-    int a,b,c,d,h,m,p,q,ans;
-    scanf("%d %d",&a,&b);
-    scanf("%d %d",&c,&d);
-    h=(a*60)+b;
-    m=(c*60)+d;
+    int i,j,k,l,h,m,p,q,ansr;
+    scanf("%d %d",&i,&j);
+    scanf("%d %d",&k,&l);
+    h=(i*60)+j;
+    m=(k*60)+l;
     if(m>h)
     {
-      ans=m-h;  
+      ansr=m-h;  
     }
     else
     {
-        ans=h-m;
+        ansr=h-m;
     }
-    p=ans/60;
-    q=ans%60;
+    p=ansr/60;
+    q=ansr%60;
     printf("%d %d",p,q);
 
     return 0;
 }
+
